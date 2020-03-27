@@ -1,0 +1,8 @@
+def handler(event, context):
+	result = []
+		for each in event:
+			if (each["operation"]=="addition"):
+				result.append(each["opA"]+each["opB"])
+			else:
+				result.append(each["opA"]-each["opB"])
+		return result

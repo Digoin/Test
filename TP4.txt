@@ -1,0 +1,5 @@
+def handler(event, context):
+	if (event["operation"]=="addition"):
+		return (event["opA"]+event["opB"])
+	else:
+		return (event["opA"]-event["opB])
